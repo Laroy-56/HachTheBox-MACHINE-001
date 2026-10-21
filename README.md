@@ -19,3 +19,5 @@ Another port to look at was port 21 ftp
 * Testing port 21 ftp for anonymous access
 
 <img width="702" height="282" alt="image" src="https://github.com/user-attachments/assets/9971b386-62ca-44e7-bc30-597cee2a8618" />
+
+As seen when using default credentials such as for the username 
