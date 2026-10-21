@@ -71,3 +71,15 @@ The ssh service responded positively and access was gained
 in order to gain root access 
 
 Using the command getcap -r / 2>/dev/null to search recursively in every directory 
+
+We come across a very interesting find :
+
+<img width="705" height="91" alt="image" src="https://github.com/user-attachments/assets/df645a1a-5fc3-4bff-9a11-36248b03c2fc" />
+
+The cap_setuid can allow us to gain root by setting our user id to 0 in binary as that means root user .
+
+I then run the command:
+
+/usr/bin/python3.8 -c 'import os; os.setuid(0); os.system("/bin/bash")'
+
+After running this root privileges were gained.
