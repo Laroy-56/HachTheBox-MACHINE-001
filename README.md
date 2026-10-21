@@ -8,3 +8,4 @@ Tool used - nmap (A powerful network recon tool)
 
 nmap -sV -sC --version-intensity 9 <Target-ip>
 
+<img width="702" height="262" alt="image" src="https://github.com/user-attachments/assets/a484c6e2-8319-4267-a64e-b0e221f73f94" />
