@@ -52,4 +52,22 @@ When changing the <id> from 1 to 0 . A new page is shown with a different securi
 
 <img width="747" height="587" alt="image" src="https://github.com/user-attachments/assets/c64f40af-1233-489a-96e3-5735b7b7ec02" />
 
-When we analyze the pcap using Wireshark to look at the network traffic this is what we find   
+When we analyze the pcap using Wireshark to look at the network traffic this is what we find :  
+
+<img width="742" height="176" alt="image" src="https://github.com/user-attachments/assets/dbe4c51f-c3b8-402b-a105-7d8936dda4a8" />
+
+We can see the network traffic including FTP  , Following the Traffic the username and password credentials are exposed which can enable us to gain access to the ftp service.
+
+Also we can test the credentials to see whether they also match with port 22 ssh :
+
+ssh nathan@(ip) 
+
+password : (captured-password)
+
+The ssh service responded positively and access was gained
+
+* Escalating privileges
+
+in order to gain root access 
+
+Using the command getcap -r / 2>/dev/null to search recursively in every directory 
